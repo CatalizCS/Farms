@@ -1,0 +1,11 @@
+name: Farms
+main: ifteam\Farms\Farms
+version: 1.2-alpha
+author: ifteam
+api: [3.0.0-ALPHA4, 3.0.0-ALPHA5, 3.0.0-ALPHA6, 3.0.1]
+
+permissions:
+ Farms:
+  default: true
+ Farms.VIP:
+  default: OP
