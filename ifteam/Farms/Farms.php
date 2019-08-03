@@ -52,7 +52,7 @@ class Farms extends PluginBase implements Listener {
 		}
 		
 		// Farmland or sand
-		if ($event->getBlock()->getId() == Item::FARMLAND or $event->getBlock()->getId() == Item::SAND) {
+		if ($event->getBlock()->getId() == Item::FARMLAND or $event->getBlock()->getId() == Item::SAND or $event->getBlock()->getId() == Item::GRASS or $event->getBlock()->getId() == Item::DIRT) {
 			foreach($this->crops as $crop){
 				if ($event->getItem()->getId() == $crop["item"]) {
 					$key = $block->x.".".$block->y.".".$block->z;
